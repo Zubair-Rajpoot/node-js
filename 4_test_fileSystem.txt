@@ -1,0 +1,1 @@
+this file is made by fs module used in 4_core_modules.js

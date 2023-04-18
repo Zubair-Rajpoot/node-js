@@ -1,0 +1,17 @@
+{
+  "name": "practicing-node",
+  "version": "1.0.0",
+  "description": "I am practicing node js and this file is for educational purpose.",
+  "main": "0_first.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Zubair-Rajpoot",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
