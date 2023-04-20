@@ -1,3 +1,4 @@
+// adding and removing files using CMD
 const fs = require("fs");
 // console.log("Hi "+process.argv[3]);
 
