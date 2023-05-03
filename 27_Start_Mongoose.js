@@ -8,18 +8,18 @@
 // model: model ka kaam schema ki base py nodejs ko mongoDB se connect krna hota hai.
 // Mongoose CRUD ==> Start.
 
-const { ObjectId } = require('mongodb');
+const { ObjectId } = require('mongodb'); // detele mn use kiya hai.
 const mongoose = require('mongoose');
 
-async function conn(){
+async function conn() {
     await mongoose.connect('mongodb://127.0.0.1:27017/youtube');
-        const videosSchema = mongoose.Schema({
-            name: String,
-            category: String,
-            Player: String,
-            Team: String
-        });
-        return videosModel = mongoose.model('videos', videosSchema);
+    const videosSchema = mongoose.Schema({
+        name: String,
+        category: String,
+        Player: String,
+        Team: String
+    });
+    return videosModel = mongoose.model('videos', videosSchema);
 
 };
 
@@ -51,14 +51,14 @@ const deleteInDB = async () => {
     // conn() se data return hoga to await work kry ga or data delete hota warna nahi.
     const VM = await conn();
     const data = await VM.deleteOne(
-        {_id: new ObjectId('644bdf5536a0439835b0027c')}
+        { _id: new ObjectId('644bdf5536a0439835b0027c') }
     );
     console.log(data);
 };
 deleteInDB();
 
 // Read data using mongoose.
-const findInDB = async ()=>{
+const findInDB = async () => {
     // conn() se data return hoga to await work kry ga or data find hoga warna nahi.
     const VM = await conn();
     const data = await VM.find();

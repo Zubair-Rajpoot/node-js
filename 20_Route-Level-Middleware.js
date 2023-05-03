@@ -32,6 +32,10 @@ route.get('/contact',(req,res)=>{
     res.send("Welcome Contact Page");
 })
 
+app.get('*',(req,res)=>{
+    res.send("Error:404");
+})
+
 app.use('/',route); // iss line k bina route.get() work ni kry ga
 
 app.listen(5000);
